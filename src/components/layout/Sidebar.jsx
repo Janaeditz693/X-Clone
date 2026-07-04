@@ -79,7 +79,7 @@ export default function Sidebar({ onPostClick, unreadCount }) {
   }
 
   return (
-    <div className="flex flex-col h-screen sticky top-0 px-2 lg:px-4 py-4 border-r border-gray-150 dark:border-zinc-800 justify-between w-16 lg:w-64 select-none">
+    <div className="hidden sm:flex flex-col h-screen sticky top-0 px-2 lg:px-4 py-4 border-r border-gray-150 dark:border-zinc-800 justify-between w-16 lg:w-64 select-none">
       <div className="flex flex-col items-center lg:items-start space-y-2">
         {/* Logo */}
         <Link to="/" className="p-3 hover:bg-gray-100 dark:hover:bg-zinc-900 rounded-full inline-block transition duration-200">

@@ -14,7 +14,7 @@ export default function BottomNav({ unreadCount }) {
   if (!userData) return null;
 
   return (
-    <div className="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-white/95 dark:bg-brand-darkBg/95 backdrop-blur-md border-t border-gray-150 dark:border-zinc-800 flex justify-around items-center z-40 px-2 select-none shadow-lg">
+    <div className="lg:hidden fixed bottom-0 left-0 right-0 h-[calc(4rem+env(safe-area-inset-bottom))] pb-[env(safe-area-inset-bottom)] bg-white/95 dark:bg-brand-darkBg/95 backdrop-blur-md border-t border-gray-150 dark:border-zinc-800 flex justify-around items-center z-40 px-2 select-none shadow-lg">
       <NavLink to="/" className={({ isActive }) => `p-3 text-brand-text dark:text-brand-darkText transition ${isActive ? 'scale-110 font-bold' : 'opacity-70'}`}>
         {({ isActive }) => isActive ? <RiHome7Fill className="text-2xl" /> : <RiHome7Line className="text-2xl" />}
       </NavLink>
